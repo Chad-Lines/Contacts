@@ -19,7 +19,8 @@ namespace Contacts
 
         private void btnNewContact_Clicked(object sender, EventArgs e)
         {
-
+            // When the NEW button is clicked, navigate to the MainPage
+            Navigation.PushAsync(new MainPage());
         }
     }
 }
