@@ -16,5 +16,10 @@ namespace Contacts
         {
             InitializeComponent();
         }
+
+        private void btnNewContact_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }
