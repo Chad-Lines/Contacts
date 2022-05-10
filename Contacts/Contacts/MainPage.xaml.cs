@@ -14,5 +14,14 @@ namespace Contacts
         {
             InitializeComponent();
         }
+
+        private void btnSave_Clicked(object sender, EventArgs e)
+        {
+            /* 
+             * Defines what happens when the main page's "Save" button (called "btnSave") is clicked
+             */
+
+
+        }
     }
 }
