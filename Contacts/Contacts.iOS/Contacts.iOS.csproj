@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{F69EB00C-3A02-4095-94FB-93EF5F128111}</ProjectGuid>
+    <ProjectGuid>{04EE3F83-A1B3-485C-8A26-8B5CBCACAD81}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{6143fdea-f3c2-4a09-aafa-6e230626515e}</TemplateGuid>
     <OutputType>Exe</OutputType>
@@ -129,7 +129,7 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\Contacts\Contacts.csproj">
-      <Project>{1657F708-E1A6-45E5-8E37-969A5DDCEAF2}</Project>
+      <Project>{B706B580-A27B-4A8E-A209-3969C43BD141}</Project>
       <Name>Contacts</Name>
     </ProjectReference>
   </ItemGroup>
