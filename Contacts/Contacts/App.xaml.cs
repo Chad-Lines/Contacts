@@ -10,7 +10,11 @@ namespace Contacts
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            // This defines the contacts page as the navigation page
+            // and sets it as the MainPage (start screen)
+            // The NavigationPage means that a "Back" button will automatically
+            // be added when we navigate *away* from the ContactsPage()
+            MainPage = new NavigationPage(new ContactsPage());
         }
 
         protected override void OnStart()
