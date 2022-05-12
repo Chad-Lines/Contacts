@@ -4,6 +4,8 @@
              x:Class="Contacts.ContactsPage">
 
     <ContentPage.ToolbarItems>
+        <!-- This creates a top menu with a clickable-text called "New" that calls
+        the btnNewContact_Clicked function in ContactsPage.xaml.cs -->
         <ToolbarItem Text="New" x:Name="New" Clicked="btnNewContact_Clicked"/>
     </ContentPage.ToolbarItems>
     
