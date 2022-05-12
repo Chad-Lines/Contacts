@@ -4,10 +4,11 @@
              x:Class="Contacts.MainPage">
     
     <StackLayout Margin="20, 20, 20, 0">                                    <!-- Creating the stack, and setting margins -->
-        <Entry Placeholder="Name"/>                                         <!-- "Entry" is for getting user input-->
-        <Entry Placeholder="Last Name"/>
-        <Entry Placeholder="Email"/>
-        <Entry Placeholder="Phone Number"/>
+        <Entry Placeholder="Name" x:Name="nameEntry"/>                      <!-- "Entry" is for getting user input-->
+        <Entry Placeholder="Last Name" x:Name="LastnameEntry"/>
+        <Entry Placeholder="Email" x:Name="emailEntry"/>
+        <Entry Placeholder="Phone Number" x:Name="phoneEntry"/>
+        <Entry Placeholder="Address" x:Name="addressEntry"/>
         <Button Text="Save" x:Name="btnSave" Clicked="btnSave_Clicked"/>    <!-- The "Clicked" defines what the button should do
                                                                             when it's clicked. This is in MainPage.xaml.cs -->
     </StackLayout>

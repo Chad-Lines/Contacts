@@ -30,6 +30,9 @@ namespace Contacts
             // The NavigationPage means that a "Back" button will automatically
             // be added when we navigate *away* from the ContactsPage()
             MainPage = new NavigationPage(new ContactsPage());
+
+            // Setting up the file path
+            FilePath = filePath;
         }
 
         protected override void OnStart()
