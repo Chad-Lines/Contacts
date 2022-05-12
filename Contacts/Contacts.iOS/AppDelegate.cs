@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 
 using Foundation;
@@ -23,6 +24,17 @@ namespace Contacts.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+
+            // The name for the database where we're going to save user-added data
+            string fileName = "Contact_db.db3";
+
+            // Setting the path to the user's Library folder
+            string folderPath = Path.Combine
+                (Environment.GetFolderPath(Environment.SpecialFolder.Personal), "..", "Library");
+
+            // Combining the folderPath and fileName to get the complete path
+            string completePath = Path.Combine(folderPath, fileName);
+
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);
