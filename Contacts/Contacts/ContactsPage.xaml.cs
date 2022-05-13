@@ -40,6 +40,9 @@ namespace Contacts
                 conn.CreateTable<Contact>();                    // Creating the Database
                 var contacts = conn.Table<Contact>().ToList();  // Converting the database table into a list
 
+                // Here we assign the contacts list to the contactsListView defined in
+                // ContactsPage.xaml. 
+                contactsListView.ItemsSource = contacts;        // Show contacts on page
             }
             
         }
