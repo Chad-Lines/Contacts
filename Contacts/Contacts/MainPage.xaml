@@ -5,7 +5,7 @@
     
     <StackLayout Margin="20, 20, 20, 0">                                    <!-- Creating the stack, and setting margins -->
         <Entry Placeholder="Name" x:Name="nameEntry"/>                      <!-- "Entry" is for getting user input-->
-        <Entry Placeholder="Last Name" x:Name="LastnameEntry"/>
+        <Entry Placeholder="Last Name" x:Name="lastnameEntry"/>
         <Entry Placeholder="Email" x:Name="emailEntry"/>
         <Entry Placeholder="Phone Number" x:Name="phoneEntry"/>
         <Entry Placeholder="Address" x:Name="addressEntry"/>
