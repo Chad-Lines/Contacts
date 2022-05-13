@@ -19,7 +19,7 @@
                     
                     By setting the Text to {Binding Name} we're telling it to display the
                     contact's Name property. -->
-                    <TextCell Text="{Binding Name}"
+                    <TextCell Text="{Binding Name}"     
                               Detail="{Binding Email}"
                               TextColor="Black"
                               DetailColor="Teal"/>
