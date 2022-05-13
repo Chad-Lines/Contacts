@@ -10,7 +10,22 @@
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <!-- This list view will be used to display the contacts -->
-        <ListView x:Name="contactsListView"/>
+        <ListView x:Name="contactsListView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <!-- This all will define how the data is presented the list view. 
+                    The way that it's displaying right now is that it's displaying each
+                    database entry as an object. Not text.
+                    
+                    By setting the Text to {Binding Name} we're telling it to display the
+                    contact's Name property. -->
+                    <TextCell Text="{Binding Name}"
+                              Detail="{Binding Email}"
+                              TextColor="Black"
+                              DetailColor="Teal"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </ContentPage.Content>
     
 </ContentPage>
